@@ -23,7 +23,7 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <fcntl.h>
-#include <curses.h>
+#include <ncursesw/curses.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <signal.h>
@@ -1890,7 +1890,7 @@ main(int argc, char *argv[]) {
 						key_length--;
 					if (key_index == key_length) {
 						binding->action.cmd(binding->action.args);
-						key_index = 0;
+					 	key_index = 0;
 						memset(keys, 0, sizeof(keys));
 					}
 				} else {

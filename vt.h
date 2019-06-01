@@ -18,7 +18,7 @@
 #ifndef VT_H
 #define VT_H
 
-#include <curses.h>
+#include <ncursesw/curses.h>
 #include <stdbool.h>
 #include <sys/types.h>
 
